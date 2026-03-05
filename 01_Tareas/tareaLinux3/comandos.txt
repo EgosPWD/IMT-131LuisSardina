@@ -1,0 +1,30 @@
+ 3355  cat .COMUNICADO.txt
+ 3356  chmod +r Instrucciones_Practica.pdf
+ 3358  chromium Instrucciones_Practica.pdf
+ 3361  mkdir logs
+ 3362  cd logs
+ 3363  hostname > sistema.log
+ 3364  whoami >> sistema.log
+ 3365  uptime >> sistema.log
+ 3366  cat sistema.log
+ 3367  chmod 444 sistema.log
+ 3369  mkdir src docs data
+ 3370  cd .consigna
+ 3371  mv Instrucciones_Practica.pdf ../data
+ 3373  mv .COMUNICADO.txt ../data
+ 3378  rm -r .consigna INSTRUCCIONES CONSIGNA
+ 3379  ls -la
+ 3380  ls -la src
+ 3381  ls -la logs
+ 3382  ls -la data
+ 3383  ls -la docs
+ 3384  cd src
+ 3385  nvim check_engine.sh
+ 3386  chmod +x check_engine.sh
+ 3387  ./check_engine.sh
+ 3388  chmod 700 src/check_engine.sh
+ 3390  chmod 700 check_engine.sh
+ 3393  cat comandos.txt
+ 3395  rm comandos.txt
+ 3396  cd ..
+ 3397  ls
